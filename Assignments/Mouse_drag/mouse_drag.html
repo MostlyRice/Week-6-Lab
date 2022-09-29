@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Events</title>
+
+  <style>
+
+    #canvas {
+      border: 2px navy solid;
+    }
+
+  </style>
+
+</head>
+<body>
+
+
+<P>Drag the mouse on the canvas</P>
+<canvas id="canvas" height="600" width="600"></canvas>
+
+<!-- Add an input type="color" to select drawing color.The value from the 
+color input can be used with a context.strokeStyle or context.fillStyle statement-->
+<form><br>
+<label for="color">Color:</label>
+<input id="color" type="text"><br><br>
+
+<!-- TODO Add an input type="range" to set the radius of the circles drawn-->
+<label for="range">Range:</label>
+<input id="range" type="text"><br><br>
+<input type="submit" value="Submit">
+</form>
+
+<br>
+<input type="button" id="clear" value="Clear">
+
+<script src="./mouse_drag.js"></script>
+</body>
+</html>
